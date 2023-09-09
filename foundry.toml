@@ -1,0 +1,36 @@
+# Foundry Configuration File
+# Default definitions: https://github.com/gakonst/foundry/blob/b7917fa8491aedda4dd6db53fbb206ea233cd531/config/src/lib.rs#L782
+# See more config options at: https://github.com/gakonst/foundry/tree/master/config
+
+
+[profile.default]
+
+
+remappings = [
+    "@openzeppelin/contracts=lib/openzeppelin-contracts/contracts",
+    "@openzeppelin-upgradeable/contracts=lib/openzeppelin-contracts-upgradeable/contracts",
+    "@chiru-labs/ERC721A=lib/ERC721A/contracts",
+    "@chiru-labs/ERC721A-Upgradeable=lib/ERC721A-Upgradeable/contracts",
+    "@ERC6551=lib/erc6551/src",
+    "@devops=lib/foundry-devops/src",
+    "@solmate=lib/solmate/src",
+]
+
+solc_version = '0.8.19'
+auto_detect_solc = false
+optimizer_runs = 1_000
+
+[etherscan]
+mumbai = { key = "${POLYGON_API_KEY}", url = "https://mumbai.polygonscan.com/api" }
+ethereum-goerli = { key = "${ETHERSCAN_API_KEY}", url = "https://goerli.etherscan.io/api" }
+celo-alfajores = { key = "${ALFAJORES_API_KEY}", url = "https://api-alfajores.celoscan.io/api" }
+ethereum-sepolia = { key = "${ETHERSCAN_API_KEY}", url = "https://api-sepolia.etherscan.io/api" }
+
+
+[rpc_endpoints]
+mainnet = "${ALCHEMY_MAINNET_URL}"
+goerli = "${ALCHEMY_GOERLI_URL}"
+polygon = "${GOERLI_POLYGON_URL}"
+mumbai = "${MUMBAI_RPC_URL}"
+alfajores = "${ALFAJORES_URL}"
+sepolia = "${ALCHEMY_SEPOLIA_URL}"

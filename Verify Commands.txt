@@ -1,0 +1,30 @@
+-- UtilityConnexus
+make verify contract_address=0xc85e63a6EEbb112Af477f7AD16419A3250716D6B contract=UtilityConnexus chain_id=11155111
+
+-- RealTokenizado
+make verify contract_address=0xC238D528E1Ce869747d25A890a6e50B61C70e3B0 contract=RealTokenizado chain_id=11155111 constructor_signature="constructor(string,uint256,address)" input_parameters="Connexus 123456 0xAaa7cCF1627aFDeddcDc2093f078C3F173C46cA4"
+
+-- RWAcar
+make verify contract_address=0x59abAc385d5443111310a859112cC3Bd68D7d72a contract=RWACar chain_id=11155111
+
+-- RWARealstate
+make verify contract_address=0xBF9E9cfC922B7E6cdA3A563CBAa0113408549f16 contract=RWARealstate chain_id=11155111
+
+-- CardTBA
+make verify contract_address=0x42D592046aE6af4110A66680d7CbB5774E2876Aa contract=CardTBA chain_id=11155111
+
+-- BorrowAndStake
+make verify contract_address=0x15A920b6BaA606a1c672805e0196f718046D2147 contract=BorrowAndStake chain_id=11155111 constructor_signature="constructor(address,address)" input_parameters="0xBF9E9cfC922B7E6cdA3A563CBAa0113408549f16 0x59abAc385d5443111310a859112cC3Bd68D7d72a"
+
+-- ConnexusCard
+make verify contract_address=0x15A920b6BaA606a1c672805e0196f718046D2147 contract=ConnexusCard chain_id=11155111 constructor_signature="constructor(address,address)" input_parameters="0xc85e63a6EEbb112Af477f7AD16419A3250716D6B 0xC238D528E1Ce869747d25A890a6e50B61C70e3B0"
+
+-- ERC6551Registry (---Não deu certo---)
+make verify contract_address=0xaE800340a53b986DdE4f20417659330cD6746aa5 contract=ERC6551Registry chain_id=11155111
+
+-- Management (implementation)
+make verify contract_address=0x160cB1C251f4bce6F5f78A394eCA6a3a922B8CEc contract=Management chain_id=11155111
+
+-- Management (ERC1967Proxy -> não deu certo -> fazer via Etherscan)
+make verify contract_address=0x6768311Bd4e253fa64042a58F8eb882272ea3204 contract=ERC1967Proxy chain_id=11155111
+constructor_signature="constructor(address,bytes)" input_parameters="0x160cB1C251f4bce6F5f78A394eCA6a3a922B8CEc 0x1459457a0000000000000000000000005ef54d86eb8afd48170859acb5a7b429cdb9215600000000000000000000000059abac385d5443111310a859112cc3bd68d7d72a000000000000000000000000bf9e9cfc922b7e6cda3a563cbaa0113408549f1600000000000000000000000042d592046ae6af4110a66680d7cbb5774e2876aa000000000000000000000000ae800340a53b986dde4f20417659330cd6746aa5"
