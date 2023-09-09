@@ -1,4 +1,4 @@
-<img align="right" width="300" height="300" top="100" src="./public/connexus.png">
+<img align="right" width="500" height="300" top="100" src="./public/connexus.png">
 
 # Smart Contract Documentation Connexus • [solidity](https://img.shields.io/badge/solidity-^0.8.17-lightgrey)
 
