@@ -4,7 +4,7 @@
 
 A **Connexus Project**, **Robust** Foundry Projects.
 
-### Connexus comes from the connection between DREX and other blockchains. A new RWA (Real world Assets), Loan and OpenBanking tokenization experience implementing the tested and functional TBA (Token Bound Account) standard. 
+### Connexus comes from the connection between DREX and other blockchains. A new RWA (Real World Assets), Loan and OpenBanking tokenization experience implementing the tested and functional TBA (Token Bound Account) standard. 
 
 **Building & Testing**
 
@@ -70,7 +70,29 @@ Verified addresses in sepolia:
 -  Constructor args [2]: 0x1459457a0000000000000000000000002279b7a0a67db372996a5fab50d91eaa73d2ebe6000000000000000000000000dc64a140aa3e981100a9beca4e685f962f0cf6c90000000000000000000000005fc8d32690cc91d4c39d9d3abcbd16989f8757070000000000000000000000000165878a594ca255338adfa4d48449f69242eb8f000000000000000000000000e7f1725e7734ce288f8367e1bb143e90bb3f0512
 -  Proxy Managment: 0x610178dA211FEF7D417bC0e6FeD39F05609AD788
 
-### all tx interactions and operations:
+### Polygon Mainnet contracts:
+
+- Erc6551Registry: 0xED08BddcD7735440e4Ad5baa1E16D0ff83cF15d8
+- Utility Connexus: 0x813f72E4f02ceF4a989B4FcAF3aF376C197e4D17
+- RealTokenizado: 0x5691d2f186BF83d775906626d1F81c94dB40c68E
+- RWAcar: 0xb0893FbB79099E7c68bE69D44Fb88920b00BEB6C
+- RWARealstate: 0x865a68C132C24b3367423C79155053869912E43B
+- cardTBA: 0x9E2406c7C8C2955bcB9b59581381d8e72DE711a4
+- BorrowStake: 0xbe91F3d2058B0B20895C46E1b9F0C3AFD65de278
+- ConnexusCard: 0x7483d598681a629049BB16D8b1088DBE569035Bc
+- Deploying: Management
+- Implementation: 0xdaA0de8f3032349311f1644EDf7528Fe0700979D
+ Constructor args [1]: 0xdaA0de8f3032349311f1644EDf7528Fe0700979D
+ Constructor args [2]: 0x1459457a0000000000000000000000007483d598681a629049bb16d8b1088dbe569035bc000000000000000000000000b0893fbb79099e7c68be69d44fb88920b00beb6c000000000000000000000000865a68c132c24b3367423c79155053869912e43b0000000000000000000000009e2406c7c8c2955bcb9b59581381d8e72de711a4000000000000000000000000ed08bddcd7735440e4ad5baa1e16d0ff83cf15d8
+- Proxy Managment: 0x32842323061D7D9E01c0db6Db68Da25f0c6bdd1d
+
+### Hyperledger Besu and Firefly contracts:
+
+- Video: [Hyperledger-Firefly](https://youtu.be/HUUinUxpLhI)
+
+- API:[Hyperledger-Connexus-API](https://b898-2804-431-cfef-b4b0-5c97-1b98-a113-6321.ngrok-free.app/api/v1/namespaces/default/apis/ConnexusManagement/api)
+
+### all tx interactions and operations in Sepolia:
 
 - create TBA Connexus: [Transaction](https://sepolia.etherscan.io/tx/0x58ab801e75b645698a75c3bacc430aa3e835e169a949ed9ac759b7d5a3e4a66f)
 
