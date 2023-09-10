@@ -93,14 +93,18 @@ contract Management is
         _createStorageIfNeeded();
         s_connexusCard.safeMint(to);
 
-        return
-            s_erc6551Registry.account(
+        address tba = s_erc6551Registry.account(
                 s_cardTBAImplementation,
                 block.chainid,
                 address(s_connexusCard),
                 s_connexusCard.getNextTokenId() - 1,
                 uint256(keccak256("Connexus"))
             );
+            emit tbaAddr(tba);
+
+        return
+            tba;
+            
     }
 
     function createBankTBACard(
